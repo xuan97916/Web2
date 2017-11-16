@@ -1,0 +1,275 @@
+body
+{
+	background: #f5f5f5;
+
+}
+div
+{
+	display:block;
+}
+a
+{
+	text-decoration: none;
+	color: #333;
+}
+ul{
+	padding: 0;
+  	list-style-type: none;
+}
+
+.main
+{
+	
+	width: 1240px;
+ 	margin: 0 auto;
+}
+.left
+{
+	
+	float: left;
+}
+.left:hover
+{
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);  /*加入阴影*/
+	transform: translate3d(0, -2px, 0);			/*使其产生上移效果*/
+	transition: all .2s linear;
+}
+.item
+{
+	height: 246px;
+  	padding: 34px 0 20px;
+	position: relative;
+  	z-index: 1;
+    float: left;
+    width: 234px;
+   	margin-left: 14px;
+    margin-bottom: 14px;
+    background: #fff;
+}
+.item:hover
+{
+box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+transform: translate3d(0, -2px, 0);
+transition: all .2s linear;
+}
+.item_pic
+{
+	width: 150px;
+ 	height: 150px;
+ 	margin: 0 auto 18px;
+ 	display:block;
+}
+.item_pic img
+{
+	width: 150px;
+ 	height: 150px;
+}
+.item .comment-box
+{
+	position: absolute;
+    bottom:0px;
+    left: 0;
+    z-index: 3;
+    width: 234px;
+    height: 250px;
+    overflow: hidden;
+    font-size: 12px;
+    opacity:0;
+    transition: all .2s linear;
+
+}
+.item .comment-box_active
+{
+	position: absolute;
+    bottom:0px;
+    left: 0;
+    z-index: 3;
+    width: 234px;
+    height: 250px;
+    overflow: hidden;
+    font-size: 12px;
+    opacity:1;
+}
+.comment-box .contenter
+{
+	position: absolute;
+    bottom:0px;
+    left: 0;
+    z-index: 4;
+    width: 234px;
+    height:75px;
+    font-size: 12px;
+    background: #ff6700;
+    opacity: 0;
+    transition: all .2s linear;
+}
+.comment-box_active .contenter
+{
+	position: absolute;
+    bottom:0px;
+    left: 0;
+    z-index: 4;
+    width: 234px;
+    height:75px;
+    font-size: 12px;
+    background: #ff6700;
+    opacity: 1;
+    transition: all .2s linear;
+}
+.comment-box .comment
+{
+	display: block;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	opacity: 0;
+}
+.comment-box .user
+{
+	display: block;
+	color: rgba(255,255,255,0.6);
+	margin-left: 20px;
+	margin-right: 1px;
+	margin-top: 5px;
+	opacity: 0;
+}
+
+.comment-box_active .comment
+{
+	display: block;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.comment-box_active .user
+{
+	display: block;
+	color: rgba(255,255,255,0.6);
+	margin-left: 20px;
+	margin-right: 1px;
+	margin-top: 5px;
+}
+.item-s
+{
+	height: 143px;
+	position: relative;
+  	z-index: 1;
+    float: left;
+    width: 234px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background: #fff;
+}
+.item-s:hover
+{
+box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+transform: translate3d(0, -2px, 0);
+transition: all .2s linear;
+}
+.item-s_pic
+{
+	width: 80px;
+ 	height: 80px;
+ 	margin-right:10px;
+ 	margin-top: 30px;
+ 	display:block;
+ 	float: right;
+}
+.item-s_pic img
+{
+	width: 80px;
+ 			height: 80px;
+}
+.item-s .title
+{
+	float: left;
+	margin-top: 50px;
+	margin-left:30px;
+}
+.item-s .price
+{
+	float: left;
+	margin-top: 10px;
+	margin-left:30px;
+}
+.title
+{
+	font-size: 14px;
+  	font-weight: 400;
+  	text-align: center;
+  	color: #333;
+  	margin-bottom: 5px;
+}
+.desc
+{
+	margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    text-overflow: ellipsis;
+   	white-space: nowrap;
+    overflow: hidden;
+    color: #b0b0b0;
+}
+.price
+{
+	margin: 0 10px 10px;
+  	text-align: center;
+  	color: #ff6700;
+}
+.price del
+{
+	color: #b0b0b0;
+}
+.new
+{
+	background-color: #83c44e;
+  	z-index: 5;
+  	position: absolute;
+  	top: 0;
+  	left: 50%;
+  	z-index: 2;
+  	width: 64px;
+  	height: 20px;
+  	margin-left: -32px;
+  	font-size: 12px;
+  	line-height: 20px;
+  	text-align: center;
+  	color: #fff;
+}
+.saleoff
+{
+	background-color: #e53935;
+  	z-index: 5;
+  	position: absolute;
+  	top: 0;
+  	left: 50%;
+  	z-index: 2;
+  	width: 64px;
+  	height: 20px;
+  	margin-left: -32px;
+  	font-size: 12px;
+  	line-height: 20px;
+  	text-align: center;
+  	color: #fff;
+}
+.more
+{
+	float: left;
+	margin-top: 35px;
+	margin-left:20px;
+	font-size: 25px;
+}
+.more small
+{
+	display: block;
+	margin-top: 10px;
+	font-weight: 100;}
+#morebutton
+{
+	float: right;
+	margin-right: 10px;
+	margin-top:30px;
+}

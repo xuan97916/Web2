@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1-8 DOM</title>
+	<link rel="stylesheet" type="text/css" href="1-8 DOM.css"/>
+	<script type="text/javascript">
+		window.onload = function(){
+			var liNodes = document.getElementsByClassName("comment-box");
+			for (var i=0; i<liNodes.length; i++)
+			{
+				liNodes[i].onmouseover = function(){
+					this.className = "comment-box_active";
+				}
+				liNodes[i].onmouseout = function(){
+					this.className = "comment-box";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="left">
+			<a href="#">
+				<img src="pic/1.jpg" alt="pic1"/>
+			</a>
+		</div>
+		<div class="right">
+			<ul class="list">
+				<li class="item">
+					<div class="item_pic">
+						<a href="#">
+							<img src="pic/2.jpg" alt="pic2">
+						</a>
+					</div>
+					<h3 class="title">
+						<a href="#">
+							小米电视4A 32"
+						</a>
+					</h3>
+					<p class="desc"> 64位处理器/1GB+4GB大内存
+					</p>
+					<p class="price">
+						<span class="num">999</span>
+						元
+						<del>
+							<span class="num">1199</span>
+							元
+						</del>
+						<div class="saleoff">享9折</div>
+					</p>
+					<div class="comment-box">
+						<div class="contenter">
+						<span class="comment">听说小米客服满腹经纶，能不能给在下对副对联!上联是...</span>
+						<span class="user">来自用户 右边 的评价</span>
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="item_pic">
+						<a href="#">
+							<img src="pic/3.png" alt="pic3">
+						</a>
+					</div>
+					<h3 class="title">
+						<a href="#">
+							小米电视4A 49英寸 标准版
+						</a>
+					</h3>
+					<p class="desc"> 
+							2GB+8GB 大存储/全高清HDR
+					</p>
+					<p class="price">
+						<span class="num">2399</span>
+						元
+					</p>
+					<div class="comment-box">
+						<div class="contenter">
+						<span class="comment">外形高大上，小米的产品果然飞一般</span>
+						<span class="user">来自用户 框架 的评价</span>
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="item_pic">
+						<a href="#">
+							<img src="pic/4.jpg" alt="pic4">
+						</a>
+					</div>
+					<h3 class="title">
+						<a href="#">
+							小米笔记本Pro 15.6英寸
+						</a>
+					</h3>
+					<p class="desc">全金属强化机身/FHD全贴合屏幕</p>
+					<p class="price">
+						<span class="num">5599</span>
+						元
+					</p>
+					<div class="new">新品</div>
+					<div class="comment-box">
+						<div class="contenter">
+						<span class="comment">和我想象中的一样好，从红米2、note4，小米5s...</span>
+						<span class="user">来自用户 断点 的评价</span>
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="item_pic">
+						<a href="#">
+							<img src="pic/5.jpg" alt="pic5">
+						</a>
+					</div>
+					<h3 class="title">
+						<a href="#">
+							小米笔记本Air 13.3" i7处理器
+						</a>
+					</h3>
+					<p class="desc"> Intel酷睿i7处理器，8GB内存+256GB</p>
+					<p class="price">
+						<span class="num">5999</span>
+						元
+					</p>
+					<div class="comment-box">
+						<div class="contenter">
+						<span class="comment">带老板的话，小米的产品很有设计感</span>
+						<span class="user">来自用户 史家回 的评价</span>
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="item_pic">
+						<a href="#">
+							<img src="pic/6.jpg" alt="pic6">
+						</a>
+					</div>
+					<h3 class="title">
+						<a href="#">
+							米家恒温电水壶
+						</a>
+					</h3>
+					<p class="desc"> 水温智能控制，304不锈钢内胆</p>
+					<p class="price">
+						<span class="num">199</span>
+						元
+					</p>
+					<div class="comment-box">
+						<div class="contenter">
+						<span class="comment">这是第三个了，比第一个优惠不少，质量还不错，烧水也...</span>
+						<span class="user">来自用户 蓝色 的评价</span>
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="item_pic">
+						<a href="#">
+							<img src="pic/7.jpg" alt="pic7">
+						</a>
+					</div>
+					<h3 class="title">
+						<a href="#">
+							智米全直流变频空调
+						</a>
+					</h3>
+					<p class="desc"> 一级能效，强劲冷暖</p>
+					<p class="price">
+						<span class="num">4399</span>
+						元
+					</p>
+					<div class="new">新品</div>
+					<div class="comment-box">
+						<span class="comment"></span>
+					</div>
+				</li>
+				<li class="item">
+					<div class="item_pic">
+						<a href="#">
+							<img src="pic/8.jpg" alt="pic8">
+						</a>
+					</div>
+					<h3 class="title">
+						<a href="#">
+							小米净水器（厨上式） 增强版
+						</a>
+					</h3>
+					<p class="desc">400加伦大流量，纯水更多，废水更少 </p>
+					<p class="price">
+						<span class="num">1499</span>
+						元
+					</p>
+					<div class="comment-box">
+						<div class="contenter">
+						<span class="comment">太方便了，只要轻轻一扭就可以按上去，萌妹子也可以...</span>
+						<span class="user">来自用户 helix 的评价</span>
+						</div>
+					</div>
+				</li>
+				<li class="item-s">
+					<div class="item-s_pic">
+						<a href="#">
+							<img src="pic/9.jpg" alt="pic9">
+						</a>
+					</div>
+					<h3 class="title">
+						<a href="#">
+							小白摄像机
+						</a>
+					</h3>
+					<p class="price">
+						<span class="num">399</span>
+						元
+					</p>
+					<div class="comment-box">
+						<span class="comment"></span>
+					</div>
+				</li>
+				<li class="item-s">
+					<div class="figure-more">
+						<a href="#">
+						</a>
+					</div>
+					<img  id="morebutton" src="pic/more.jpg"/>
+					<a class="more" href="#">
+						浏览更多
+						<small>热门</small>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
